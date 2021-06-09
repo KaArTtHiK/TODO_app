@@ -1,0 +1,14 @@
+<h1>TODO_app</h1>
+
+<table>
+    <tr>
+        <th>Items</th>
+    </tr>
+    {% for task in tasks %}
+        <tr>
+            <td>{{task.title}}</td>
+        </tr>
+    {% empty %}
+    <h3>list is empty</h3>
+    {% endfor %}
+</table>
